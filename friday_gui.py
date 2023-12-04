@@ -1,7 +1,8 @@
 import speech_recognition as sr
 import subprocess as sp
 import threading as tr
-import pyttsx3, pywhatkit, wikipedia, datetime, keyboard, os, colors, friday
+import friday_logic as friday
+import pyttsx3, pywhatkit, wikipedia, datetime, keyboard, os, colors
 from pygame import mixer
 from tkinter import *
 from PIL import Image, ImageTk
