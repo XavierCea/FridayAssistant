@@ -1,13 +1,17 @@
-import speech_recognition as sr
-import subprocess as sp
-import threading as tr
 import friday_logic as friday
-import pyttsx3, pywhatkit, wikipedia, datetime, keyboard, os, colors
-from pygame import mixer
 from tkinter import *
 from PIL import Image, ImageTk
 
 #GUI configuration
+commands = """
+    COMANDOS HABILITADOS:
+    - Reproduce... [canción]
+    - Busca... [algo]
+    - Alarma... [hora en formato 24H]
+    - Archivo... [nombre]
+    - Abre... [nombre archivo/programa]
+    - Escribe
+"""
 
 root = Tk()
 root.title("FRIDAY ASSISTANT")
@@ -24,18 +28,6 @@ title.place(x=305, y=10)
 
 canva_commands = Canvas(bg = '#410185', height=190, width=300)
 canva_commands.place(x=0, y=0)
-
-commands = """
-    COMANDOS HABILITADOS:
-    - Reproduce... [canción]
-    - Busca... [algo]
-    - Alarma... [hora en formato 24H]
-    - Archivo... [nombre]
-    - Abre... [nombre archivo/programa]
-    - Escribe
-"""
-
-
 
 photo = PhotoImage(file = "./assets/images/audio_icon.png") 
 photo = photo.subsample(10, 10)
