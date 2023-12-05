@@ -8,9 +8,10 @@ commands = """
     - Reproduce... [canción]
     - Busca... [algo]
     - Alarma... [hora en formato 24H]
-    - Archivo... [nombre]
-    - Abre... [nombre archivo/programa]
+    - Archivo... [nombre archivo]
+    - Abre... [web/programa]
     - Escribe
+    - Tiempo [Ubicación]
 """
 
 root = Tk()
@@ -36,6 +37,6 @@ listenBT = Button(root, text="Escuchar", image=photo, width=400, fg="white", bg=
 listenBT.pack(pady=10)
 listenBT.place(x=350, y=80)
 
-canva_commands.create_text(140, 80, text=commands, fill="white", font='Arial 11')
+canva_commands.create_text(140, 90, text=commands, fill="white", font='Arial 11')
 
 root.mainloop()
