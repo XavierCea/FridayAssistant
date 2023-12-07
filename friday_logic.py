@@ -143,7 +143,7 @@ def run_friday():
     elif 'tiempo' in recognize:
         print(recognize)            
         locate = recognize.replace('tiempo', '')
-        weather.weather(locate)
+        talk(weather.weather(locate))
     else:
         talk('Comando invalido') 
         print('Comando invalido')            
